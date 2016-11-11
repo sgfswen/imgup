@@ -16,11 +16,12 @@
         <!-- Styles -->
         @yield('before-styles-end')
 
-        {{ Html::style(elixir('css/frontend.css')) }}
+        
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-pink.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
+	{{ Html::style(elixir('css/frontend.css')) }}	
+	
 	<!-- Check if the language is set to RTL, so apply the RTL layouts -->
         @langRTL
             {!! Html::style(elixir('css/rtl.css')) !!}
@@ -29,9 +30,9 @@
         @yield('after-styles-end')
 
         <!-- Fonts -->
-        {{ Html::style('https://fonts.googleapis.com/css?family=Lato:100,300,400,700') }}
+        {{ Html::style('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700') }}
     </head>
-    <body id="app-layout">
+    <body id="app-layout" style="font-family: 'Roboto', sans-serif">
         @include('includes.partials.logged-in-as')
         @include('frontend.includes.nav')
 
