@@ -1,3 +1,8 @@
+# config file
 config.php
+
+# aws config
 aws_config.php
+
+# db config
 resource.php
