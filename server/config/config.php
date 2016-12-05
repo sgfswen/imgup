@@ -5,10 +5,15 @@ return array(
         'algorithm' => 'HS512' // Algorithm used to sign the token, see https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40#section-3
         ),
     'database' => array(
-        'user'     => 'wpf8741', // Database username
+        'user'     => 'wpf741', // Database username
         'password' => 'Gcma5EB$', // Database password
-        'host'     => 'aa182ertcdn20c2.cr86zq8cwyiy.us-east-2.rds.amazonaws.com', // Database host
-        'name'     => 'wpf8741', // Database schema name
+        'host'     => 'imgup.cr86zq8cwyiy.us-east-2.rds.amazonaws.com:3306', // Database host
+        'name'     => 'imgup', // Database name
+    ),
+    'aws' => array(
+        'awsAccessKey' => 'AKIAIESUB7SWZ6ZWSAPA',
+        'awsSecretKey' => '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',
+        'bucket'       => 'wfpublic'
     ),
     'serverName' => 'imgup',
 );

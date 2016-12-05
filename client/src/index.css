@@ -1,5 +1,232 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html, body{
+  background: #00ffc9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00ffc9 , #0fecbb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00ffc9 , #0fecbb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+}
+
+.theme-color-1{
+  background-color: rgba(136,53,255,1);
+  color: rgba(255,255,255,1);
+}
+
+.theme-color-2{
+  background-color: rgba(0,255,201,1);
+  color: rgba(255,255,255,1);
+}
+
+.theme-color-3{
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,0,.7);
+}
+
+/* Any primary surface above the red background (cards, jumbo, ect) */
+.theme-surface{
+  color: white;
+  background-color: rgba(136,53,255,1); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, rgba(136,53,255,.7) , rgba(136,53,255,1)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(136,53,255,.7) , rgba(136,53,255,1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 2.5px 2.5px rgba(0, 0, 0, 0.22);
+
+}
+
+
+
+.theme-card{
+  background-color: rgba(136,53,255,1); /* fallback for old browsers */
+  color: rgba(255,255,255,.7);
+}
+
+.theme-card .card-header{
+  font-family: 'Rubik', serif;
+  background-color: rgba(136,53,255,1);
+  color: rgba(255,255,255,1);
+}
+
+.theme-card .card-footer{
+  background-color: rgba(136,53,255,1); /* fallback for old browsers */
+  color: rgba(255,255,255,.7);
+}
+
+#loadMore{
+  font-family: 'Rubik', serif;
+  background-color: #00ffc9;
+  border:none;
+  color: rgba(255,255,255,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-left: 2.5%;
+  padding-right:2.5%;
+}
+
+#loadMore:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+}
+
+
+
+#upload1{
+  border:1px solid;
+  border-color: rgba(25,236,187,.6);
+  color: rgba(255,255,255,.7);
+  max-width: 50%;
+  margin:auto
+}
+
+#upload1:hover{
+  border-color: rgba(25,236,187,.9);
+  color: rgba(255,255,255,.9);
+}
+
+#upload2{
+  border:1px solid;
+  border-color: rgba(25,236,187,.6);
+  color: rgba(255,255,255,1);
+  max-width: 50%;
+  margin:auto
+}
+#upload2:hover{
+  border-color: rgba(25,236,187,.9);
+  color: rgba(255,255,255,1);
+}
+
+
+.theme-navbar{
+  padding: 1.5%;
+}
+
+.theme-heading{
+  font-family: 'Rubik', serif;
+  background-color: transparent;
+  color: rgba(255,255,255,.85);
+  border: none;
+}
+
+.theme-button{
+  font-family: 'Rubik', serif;
+  background-color: rgba(25,236,187,.6); /* fallback for old browsers */
+  border:none;
+  color: rgba(255,255,255,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 1%;
+}
+
+.theme-button:hover{
+  background-color: rgba(25,236,187,1); /* fallback for old browsers */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 1);
+}
+
+
+.theme-button-up{
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 1%;
+  border:none;
+}
+
+.theme-button-up:hover{
+  background-color: #43A047; /* fallback for old browsers */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.theme-button-down{
+  background-color: #e52d27; /* fallback for old browsers */
+  color: rgba(255,255,255,.8);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 1%;
+  border:none;
+}
+
+.theme-button-down:hover{
+  background-color: #E53935; /* fallback for old browsers */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+.theme-input{
+  margin: 1%;
+}
+
+.theme-input:hover{
+  border-color: #0fecbb;
+}
+
+.theme-input:focus{
+  border-color: #0fecbb;
+}
+
+
+.theme-preview{
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  padding: 2%;
+}
+
+.theme-preview:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hide{
+  display:none;
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:.5s;
+  -moz-animation-duration:.5s;
+  animation-duration:.5s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
